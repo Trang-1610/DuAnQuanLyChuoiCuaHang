@@ -1,0 +1,521 @@
+*{
+    /* font-family: "Brush Script MT", cursive; */
+    font-family: "block-pro", "Helvetica Neue", Verdana, Arial, sans-serif; 
+         margin: 0;
+         padding: 0;
+         /* background-color: #f5f5f5; */
+     }
+    
+   /* trang chủ   */
+     .head{
+        /* position: fixed; */
+        position: sticky;
+        top: 0;
+        z-index: 1;
+     }
+     .header {
+         background-color: #ff9900;
+         padding-left: 30px;
+         text-align: left;
+         display: flex;
+         justify-content: space-between;
+
+     }
+     .h-nav{
+
+        display: flex;
+        align-items: center;
+        padding-right: 100px;
+     }
+     .h-nav>a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0 20px;
+        
+     }
+     .h-nav>a:hover{
+        color: #6e3d2e;
+     }
+     .nav {
+         background-color: #fff;
+         padding-top: 20px ;
+         text-align: center;
+         border-bottom: 1px solid #ddd;
+         display: flex;
+         justify-content: center;
+         text-align: center;
+
+     }
+     .nav a {
+         margin: 0 15px;
+         text-decoration: none;
+         color: #333;
+         font-weight: bold;
+     }
+     .nav a.new {
+         color: red;
+     }
+     .nav img {
+         height: 30px;
+         vertical-align: middle;
+         border-radius: 40%;
+     }
+     a.contact {
+        
+         color: #ff0000;
+         text-align: right;
+         font-size: 20px;
+         padding: 0px 20px 10px 20px;
+         font-weight: bold;
+         margin: 0 15px;
+
+     }
+     .contact i {
+         margin-right: 5px;
+     }
+
+
+/* slide */
+.slider-container {
+    /* padding-top: 10px; */
+    position: relative;
+    max-width: 84%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px; /* Thay đổi chiều cao theo nhu cầu */
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-1 {
+    background-image: url('../img/banner-web_17.jpg');
+}
+
+.slide-2 {
+    background-image: url('../img/banner-web-cheesering.jpg');
+}
+
+.slide-3 {
+    background-image: url('../img/banner-web-trial.jpg');
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+     /* body */
+     .main {
+         padding: 20px;
+         text-align: center;
+
+     }
+     .main h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 30px 0;
+        font-weight: bold;
+     }
+     .product {
+         display: inline-block;
+         width: 30%;
+         margin: 1%;
+         background-color: #fff;
+         padding: 20px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     }
+     .product img {
+         width: 100%;
+         height: auto;
+     }
+     .product h3 {
+        padding-top: 10px;
+         font-size: 18px;
+         font-weight: bold;
+         color: #333;
+     }
+     .product p {
+         font-size: 14px;
+         color: #666;
+     }
+     .product .price {
+         font-size: 20px;
+         color: #ff2b2b;
+         margin: 10px 0;
+         font-weight: bold;
+     }
+     .product .cart {
+         background-color: #ff9900;
+         color: #fff;
+         padding: 10px 20px;
+         text-decoration: none;
+         display: inline-block;
+         border-radius: 5px;
+         width: 100%;
+     }
+
+
+
+
+
+
+     /* footer */
+     .ft{
+        /* width: 70%; */
+        display: flex;
+        justify-content: center;
+        background-color: #f57c00;
+
+     }
+     .footer1 {
+        padding: 50px 100px;
+        text-align: center;
+        color: white;
+    }
+    .footer1 .icon {
+        font-size: 50px ;
+        margin-bottom: 20px;
+    }
+    .footer1 h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .footer1 p {
+        margin: 10px 0 0;
+        font-size: 16px;
+    }
+    .footer {
+        background-color: #333;
+        color: white;
+        padding: 40px 0;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .footer .column {
+        flex: 1;
+        margin: 0 20px;
+    }
+    .footer .column h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #ff9900;
+    }
+    .footer .column p,
+    .footer .column a {
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        margin: 5px 0;
+        display: block;
+    }
+    .footer .column a:hover {
+        text-decoration: underline;
+    }
+    .footer .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+    .footer .social-icons a {
+        color: white;
+        font-size: 20px;
+    }
+    .footer .subscribe {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .subscribe input[type="email"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    .footer .subscribe button {
+        padding: 10px;
+        background-color: #d32f2f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .footer .subscribe button:hover {
+        background-color: #b71c1c;
+    }
+    .footer .bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
+/* quanly */
+.ql{
+    width: 1000px;
+    margin: 0 auto;
+}
+.ql-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../img/avt.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+.ql-text-container {
+    color: #424242;
+}
+.ql-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.ql-position {
+    font-size: 14px;
+    color: #1e88e5;
+}
+.ql-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ql-card {
+    /* width: 150px; */
+    height: 250px;
+    background-color: white;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ql-card>a{
+    text-decoration: none;
+}
+.ql-card:hover{
+    background-color: #fff0dc;
+  
+}
+.ql-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+.ql-card p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* qlnl */
+.qlnl>h1 , .ulnl>h1, .kqulnl>h1 , .qldnh >h1{
+    font-weight: bold;
+}
+.qlnl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.qlnl-search {
+    /* display: flex; */
+    /* align-items: center; */
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    overflow: hidden;
+    /* width: 400px; */
+}
+.qlnl-search input[type="text"] {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+.qlnl-search button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qlnl-search button i {
+    color: white;
+    font-size: 18px;
+}
+.qlnl-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #007bff; */
+    color: white;
+    cursor: pointer;
+}
+.qlnl-option{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.qlnl-uocluong {
+    background-color: #ff9800;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+th, td, tr {    
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+td>a{
+    text-decoration: none;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.qlnl-status {
+    color: green;
+}
+.qlnl-status.qlnl-out-of-stock {
+    color: red;
+}
+.edit-icon {
+    color: #007bff;
+    cursor: pointer;
+}
+button>a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+
+/* uocluongnl */
+
+
+.ul-input{
+    width: 100px;
+}
+
+
+
+/* ql don nhap hang */
+.date-input {
+    width: 20%;
+    padding: 10px;
+    border: 2px solid #a6cbff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+.date-input:focus {
+    border-color: #d7eaff;
+    outline: none; /* Xóa viền mặc định khi input được chọn */
+}
+.date-input::-webkit-calendar-picker-indicator {
+    background-color: #f8fcff; /* Đổi màu biểu tượng lịch */
+    border-radius: 5px;
+    padding: 5px;
+}
+.date-input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Ẩn nút tăng/giảm số */
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 400px; /* Thêm chiều cao */
+}
+
+
+.dropbtn1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content1 a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown1:hover .dropbtn1 {
+    background-color: #0d6efd;
+  }
+  .dropdown-item2{
+    list-style-type: none;
+  }
